@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt]{NPUResearchProposal}
+\usepackage[top=2.2cm, bottom=3cm, left=2.4cm, right=2.4cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{extpfeil}
+\usepackage{times}  % Times fonts
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[ruled,vlined,norelsize]{algorithm2e}
+\usepackage{esint}
+\usepackage{amssymb,amsmath}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{type1cm}
+\usepackage{type1ec}
+% \usepackage{stmaryrd}
+\usepackage[square,sort,comma,numbers]{natbib}
+
+%\usepackage{javen}
+\usepackage{bbm}
+
+\newcommand{\NP}{\mathcal{NP}}
+
+% \xeCJKsetup{CJKglue=\hspace{0pt plus .08 \baselineskip }}  
+\titleformat{\section}{\Large\bfseries}{\thesection.}{1em}{}
+
+
+
+\begin{document}
+
+\title{西北工业大学博士开题报告模板}
+
+% Separate multiple authors with "\and".
+% Use the \thanks command to give your address
+\author{作者}
+\stunumber{2010xxxxxx}
+\College{计算机学院}
+\Major{计算机科学与技术}
+\Degree{博士}
+\Supervisor{XXX$\quad$教授}
+\Classification{统分}
+\Date{201~年~~月~~日}
+\isbn{XXX-XXX-XXX-X}	
+%\FundReasearch %基础研究
+\AppResearch %应用研究
+%\EngResearch %工程技术
+%\CroResearch %跨学科研究
+\date{\today}		
+\maketitle
+
+\section{研究背景与意义}
+\label{sec:background}
+公式示例见\eqref{eq:eq_example}。
+\begin{equation}
+  \label{eq:eq_example}
+  \begin{split}
+    &\oiint{\scriptstyle\partial \Omega
+    }\mathbf{E}\cdot\mathrm{d}\mathbf{S} = \frac{1}{\varepsilon_0}
+    \iiint_\Omega \rho \,\mathrm{d}V\textit{，}\\
+   & \oiint{\scriptstyle \partial \Omega
+    }\mathbf{B}\cdot\mathrm{d}\mathbf{S} = 0\textit{，}\\
+    &\oint_{\partial \Sigma} \mathbf{E} \cdot
+    \mathrm{d}\boldsymbol{\ell} = - \frac{d}{dt} \iint_{\Sigma}
+    \mathbf{B} \cdot \mathrm{d}\mathbf{S} \textit{，}\\
+    &\oint_{\partial \Sigma} \mathbf{B} \cdot \mathrm{d}\boldsymbol{\ell} = \mu_0 \iint_{\Sigma} \mathbf{J} \cdot \mathrm{d}\mathbf{S} + \mu_0 \varepsilon_0 \frac{d}{dt} \iint_{\Sigma} \mathbf{E} \cdot \mathrm{d}\mathbf{S}\textit{。}
+  \end{split}
+\end{equation}
+多个公式示例见
+\begin{subequations}
+  \begin{align}\label{eq:eq_example2}
+    \nabla \cdot \mathbf{E} = &\frac {\rho} {\varepsilon_0}\textit{，}\\
+    \nabla \cdot \mathbf{B} =& 0\textit{，}\\
+    \nabla \times \mathbf{E} =& -\frac{\partial \mathbf{B}} {\partial
+      t}\textit{，}\\
+    \nabla \times \mathbf{B} = &\mu_0\left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right) \textit{。}
+  \end{align}
+\end{subequations}
+插图示例见图\ref{fig:fig_example}。
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.35\textwidth]{example.eps}
+  \caption{插图示例}
+  \label{fig:fig_example}
+\end{figure}
+
+参考文献示例如下\citep{rudin1964principles}。
+\section{研究现状}
+\label{sec:current_state}
+\section{研究内容}
+\label{sec:contents_research}
+\section{研究难点}
+\label{sec:keypoints}
+\section{研究方案}
+\label{sec:roadmap}
+\section{进度安排}
+\section{预期的创新点与成果}
+
+\bibliographystyle{IEEEtranN}	% (uses file "plain.bst")
+\bibliography{ref}		% expects file "myrefs.bib"
+\end{document}
+
+%%% Local Variables: 
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% End: 
