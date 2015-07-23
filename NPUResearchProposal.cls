@@ -17,7 +17,6 @@
 \RequirePackage{xltxtra} % provides some fixes/extras
 \RequirePackage{fancyhdr}
 \RequirePackage{fancybox}
-
 \RequirePackage{xeCJK} % 使用xeCJK宏包
 \RequirePackage{setspace}
 \RequirePackage{ifthen,epsfig,graphicx}
@@ -37,7 +36,8 @@
 
 \ProcessOptions
 \LoadClass[a4paper]{article}
-
+\setmainfont[BoldFont=SimSun,ItalicFont=Times New Roman]{Times New Roman}
+%\setsansfont{Times New Roman}
 %For chinese fonts
 %\setCJKmainfont[BoldFont=SimHei]{SimSun}
 \setCJKmonofont{SimSun}% 设置缺省中文字体
